@@ -22,7 +22,6 @@ namespace TextRedac
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string filepath;
         public MainWindow()
         {
             InitializeComponent();
