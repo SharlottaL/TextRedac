@@ -1,0 +1,88 @@
+﻿<Window x:Class="TextRedac.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextRedac"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1450"
+        Loaded="Window_Loaded" Icon="/brand_notepad_plus_plus_icon_158784.ico">
+    <Window.Resources>
+        <RadialGradientBrush x:Key="TextBoxBackground1">
+            <GradientStop Color="#FF63869C"/>
+            <GradientStop Color="#FF6572E6"/>
+            <GradientStop Color="#FFA56384"/>
+            <GradientStop Color="#FF6CC2B0"/>
+            <GradientStop Color="#FF4C2733"/>
+            <GradientStop Color="#FF9E857D"/>
+            <GradientStop Color="White" Offset="0.563"/>
+            <GradientStop Color="#FF1B0503" Offset="0.737"/>
+            <GradientStop Color="#FF654134" Offset="0.823"/>
+            <GradientStop Color="White" Offset="0.883"/>
+            <GradientStop Color="Black" Offset="0.903"/>
+            <GradientStop Color="#FFBD8D6E" Offset="0.47"/>
+            <GradientStop Color="#FF1B0503" Offset="0.493"/>
+            <GradientStop Color="#FF654134" Offset="0.787"/>
+            <GradientStop Color="#FF8A6C63" Offset="0.703"/>
+            <GradientStop Color="#FFB9AAA4" Offset="0.667"/>
+            <GradientStop Color="#FFBD8D6E" Offset="0.627"/>
+            <GradientStop Color="#FF5A402E" Offset="0.59"/>
+            <GradientStop Color="#FF654134" Offset="0.527"/>
+            <GradientStop Color="#FF654134" Offset="0.557"/>
+            <GradientStop Color="#FF67351B" Offset="0.23"/>
+            <GradientStop Color="#FF6F4A39" Offset="0.133"/>
+            <GradientStop Color="#FF653519" Offset="0.36"/>
+            <GradientStop Color="#FE190E08" Offset="0.29"/>
+            <GradientStop Color="#FF795C50" Offset="0.067"/>
+            <GradientStop Color="#FE5F4238" Offset="0.027"/>
+            <GradientStop Color="#FF79503B" Offset="0.173"/>
+            <GradientStop Color="#FF8A5433" Offset="0.42"/>
+        </RadialGradientBrush>
+    </Window.Resources>
+    <Grid ClipToBounds="True" Cursor="AppStarting">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF6F0B0B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <!--<Rectangle Fill="Red"/>
+        <Rectangle Grid.Row="1"  Fill="Green"/>
+        <Rectangle Grid.Row="2" Fill="Blue"/>-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Menu FontSize="16" Grid.Row="0" Background="Black">
+                <MenuItem Header="Файл" Background="Black" Foreground="White">
+                    <MenuItem Header="New" Background="Black"/>
+                    <MenuItem Header="Open" Background="Black" Click="MenuItem_Click"/>
+                    <Separator Background="Black"/>
+                    <MenuItem Header="Save" Background="Black"/>
+                    <MenuItem Header="Save as" Background="Black"/>
+                    <Separator Background="Black"/>
+                    <MenuItem Header="Quit" Background="Black" Click="MenuItem_Click_3"/>
+                </MenuItem>
+                <MenuItem Header="Изменить" Background="Black" Foreground="White">
+                    <MenuItem Header="Find" Background="Black"/>
+                    <MenuItem Header="Replace" Background="Black"/>
+                    <Separator Background="Black"/>
+                    <MenuItem Header="Undo" Background="Black"/>
+                    <MenuItem Header="Redo" Background="Black"/>
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <TextBox Name="textObl" BorderThickness="0" Margin="10,35,10,-635" TextWrapping="Wrap" Text="" FontFamily="Comic Sans MS" FontSize="16" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"  SpellCheck.IsEnabled="True" TabIndex="2147483644" IsHitTestVisible="True" Foreground="White" CaretBrush="White" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" UseLayoutRounding="False">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF6F0B0B" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
