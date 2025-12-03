@@ -49,9 +49,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
-        <!--<Rectangle Fill="Red"/>
-        <Rectangle Grid.Row="1"  Fill="Green"/>
-        <Rectangle Grid.Row="2" Fill="Blue"/>-->
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
@@ -62,8 +59,8 @@
                     <MenuItem Header="New" Background="Black"/>
                     <MenuItem Header="Open" Background="Black" Click="MenuItem_Click"/>
                     <Separator Background="Black"/>
-                    <MenuItem Header="Save" Background="Black"/>
-                    <MenuItem Header="Save as" Background="Black"/>
+                    <MenuItem Header="Save" Background="Black" Click="MenuItem_Click_2"/>
+                    <MenuItem Header="Save as" Background="Black" Click="MenuItem_Click_1"/>
                     <Separator Background="Black"/>
                     <MenuItem Header="Quit" Background="Black" Click="MenuItem_Click_3"/>
                 </MenuItem>
@@ -76,7 +73,7 @@
                 </MenuItem>
             </Menu>
         </Grid>
-        <TextBox Name="textObl" BorderThickness="0" Margin="10,35,10,-635" TextWrapping="Wrap" Text="" FontFamily="Comic Sans MS" FontSize="16" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"  SpellCheck.IsEnabled="True" TabIndex="2147483644" IsHitTestVisible="True" Foreground="White" CaretBrush="White" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" UseLayoutRounding="False">
+        <TextBox Name="textObl" BorderThickness="0" Margin="10,35,10,-635" TextWrapping="Wrap" Text="" Language="ru-RU" FontFamily="Comic Sans MS" FontSize="16" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"  SpellCheck.IsEnabled="True" TabIndex="2147483644" IsHitTestVisible="True" Foreground="White" CaretBrush="White" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" UseLayoutRounding="False">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
